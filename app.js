@@ -8,6 +8,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+require('./models/searchModel.js');
+var mongoose = require('mongoose');
+mongoose.connect(process.env.MONGO_URI);
+
 var routes = require('./routes/indexRoute');
 
 var app = express();
