@@ -5,6 +5,8 @@ var indexCtrl =  require("../controllers/indexController");
 /* GET home page. */
 router.get('/', indexCtrl.serveIndex);
 
-router.get('/:query', indexCtrl.findImages);
+router.get('/imagesearch/:query', indexCtrl.findImages);
+
+router.get('/latest/imagesearch/', indexCtrl.getLatest);
 
 module.exports = router;
