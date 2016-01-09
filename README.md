@@ -3,11 +3,11 @@ A microservice where the user can get the image URLs, alt text and page urls for
 It can also paginate through the responses by adding a ?offset=2 parameter to the URL and can get a list of the most recently submitted search strings.
 ###Example usage:
 ```sh
-<%= baseUrl %>imagesearch/nba<br>
-<%= baseUrl %>imagesearch/nba?offset=2<br>
+<%= baseUrl %>imagesearch/nba
+<%= baseUrl %>imagesearch/nba?offset=2
 <%= baseUrl %>latest/imagesearch/
 ```
-###Example output of images terms:
+###Example output of images queries:
 ```sh
      [
       {
@@ -72,7 +72,7 @@ It can also paginate through the responses by adding a ?offset=2 parameter to th
       }
      ]
 ```
-###Example output of the latest searches:
+###Example output of the latest terms:
 ```sh
     [
       {
