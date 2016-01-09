@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var Searchs = mongoose.model('Search');
 
 exports.serveIndex = function(req, res, next) {
-    res.render('index', { title: 'Image Search Abstraction Layer' }); 
+    res.render('index', { title: 'Image Search Abstraction Layer', baseUrl: process.env.baseUrl }); 
 };
 
 exports.findImages = function(req, res, next){
